@@ -1,0 +1,78 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px #294b59;
+}
+.container .email label, .container .password label {
+  font-size: 12pt;
+}
+.container .email input, .container .password input {
+  display: block;
+}
+
+.function {
+  width: 100%;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 65px;
+}
+.function input {
+  margin: 0;
+}
+.function label {
+  font-size: 12px;
+}
+.function button {
+  border: none;
+  background-color: #294b59;
+  border-radius: 4px;
+}
+.function button a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+.function button:hover {
+  background-color: cadetblue;
+  cursor: pointer;
+  transition: 0.6s;
+  box-shadow: 4px 4px 4px #294b59;
+}
+
+.login {
+  border: none;
+  background-color: #294b59;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+  padding: 6px 16px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.login:hover {
+  background-color: cadetblue;
+  cursor: pointer;
+  transition: 0.6s;
+  box-shadow: 4px 4px 4px #294b59;
+}/*# sourceMappingURL=practicestyle.css.map */

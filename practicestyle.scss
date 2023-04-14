@@ -1,0 +1,98 @@
+$primary-color:#294b59;
+$second-color:cadetblue;
+
+// 將所有元素都加入該特性，包括兩個偽元素
+*, *::before, *::after{
+    // 會使原本 300x300不包含 padding 的box 變成300即包含padding的 box
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    border-radius: 8px;
+    box-shadow:5px 5px 5px  #294b59;
+
+    .email, .password{
+        
+        label{
+            font-size: 12pt;
+        }
+
+        input{
+            display: block;
+        }
+    }
+}
+
+.function{
+    width: 100%;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 65px;
+
+    input{
+        margin: 0;
+    }
+
+    label{
+        font-size: 12px;
+    }
+
+    button{
+        border: none;
+        background-color: $primary-color;
+        border-radius: 4px;
+        a{
+            font-size: 12px;
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        //互動語法開始
+        &:hover{
+            background-color:$second-color;
+            cursor: pointer;
+            transition:0.6s;
+            box-shadow:4px 4px 4px  #294b59;
+            }
+
+    }
+}
+
+.login{
+
+    &:hover{
+        background-color:$second-color;
+        cursor: pointer;
+        transition:0.6s;
+        box-shadow:4px 4px 4px  #294b59;
+        }
+
+    border: none;
+    background-color: $primary-color;
+    border-radius: 4px;   
+    font-size: 12px;
+    color: white;
+    padding: 6px 16px;
+    margin-top:12px;
+    margin-bottom: 20px;
+    
+}
